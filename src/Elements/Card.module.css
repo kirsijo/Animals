@@ -1,0 +1,23 @@
+.card {
+  background-color: whitesmoke;
+  max-width: 320px;
+  border-color: black;
+  border-width: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  height: 180px;
+  width: 320px;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+}
