@@ -1,23 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
 .card {
   background-color: whitesmoke;
-  max-width: 320px;
+  width: 200px;
   border-color: black;
   border-width: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
 }
 
-img {
-  height: 180px;
-  width: 320px;
+h2 {
+  margin: 1rem;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgb(121, 121, 121);
+  filter: grayscale(0%);
+  cursor: pointer;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 button {
   height: 50px;
-  width: 100px;
+  width: 80px;
+  margin: 10px;
+  background-color: rgb(236, 205, 210);
+  border-radius: 3px;
+  border-style: none;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5rem;
+}
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  font-size: 0.8rem;
+}
+
+.likes_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
 }
